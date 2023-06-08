@@ -1,16 +1,182 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Pixel's Website</title>
-  </head>
-  <body>
-    <main>
-      <img src="FA-18C carrier takeoff.jpg" alt="An F/A-18 Hornet taking off from a carrier on calm seas, afterburners lit." width=auto height=600/>
-      <h1>Welcome to my website!</h1>
-      <h2>Here you will find news of my projects, achievements, and posts about aircraft.</h2>
-      <p> My blog: https://pixelazer.medium.com/ </p>
-    </main>
-  </body>
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <title>Pixel's Site</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #ffecd6;
+    }
+    
+    h1 {
+      color: #0d2b45;
+      font-size: 28px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      margin-top: 30px;
+    }
+    
+    p {
+      color: #8d697a;
+      font-size: 18px;
+    }
+    
+    header {
+      padding: 0;
+    }
+    
+    header img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+    }
+    
+    .contact-info {
+      margin-top: 10px;
+    }
+    
+    .contact-info p {
+      margin-bottom: 10px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      margin-top: 0px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    .social-icons img {
+      width: 15px;
+      height: 15px;
+    }
+    
+    .image-title {
+      padding-bottom: 20px;
+      background-color: transparent;
+    }
+
+    .image-title img {
+      filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+    }
+
+    .blog-section {
+      background-color: #ffd4a3;
+      padding: 30px;
+      margin-top: 50px;
+    }
+    
+    .blog-section h2 {
+      color: #203c56;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    
+    .blog-section .blog-post {
+      text-align: left;
+      margin-bottom: 30px;
+    }
+    
+    .blog-section .blog-post h3 {
+      color: #544e63;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    .blog-section .blog-post p {
+      color: #d08159;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+    
+    .gallery-section {
+      background-color: #ffd4a3;
+      padding: 30px;
+      margin-top: 50px;
+    }
+    
+    .gallery-section h2 {
+      color: #203c56;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    
+    .gallery-section .image-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    
+    .gallery-section .image-wrapper img {
+      max-width: 300px;
+      max-height: 200px;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="header.png" alt="Header Image">
+  </header>
+  
+  <div>
+    <p>Thank you for visiting!</p>
+  </div>
+
+  <div class="social-icons">
+    <a href="https://www.instagram.com/pixels.pixelart/" target="_blank" rel="noopener noreferrer">
+      <img src="https://pluspng.com/img-png/instagram-icon-png-instagram-icon-1600.png" alt="Instagram">
+    </a>
+    <a href="https://discord.gg/zZeVt73qhY" target="_blank" rel="noopener noreferrer">
+      <img src="https://bestsecuritysearch.com/wp-content/uploads/2016/10/discord-logo-bss.png" alt="Discord">
+    </a>
+  </div>
+
+  
+  <div class="contact-info">
+    <p>Click the icons to see more pixelart, or join my Discord server. </p>
+    <p> </p>
+    <p> </p>
+    <p> </p>
+    <p>Blog: https://pixelazer.medium.com/</p>
+  </div>
+
+  <div class="gallery-section">
+    <div class="image-title">
+      <img src="gallery_header.png" alt="Title Image" height="24">
+    </div>
+    
+    <div class="image-wrapper">
+      <img src="image1.jpg" alt="An incomplete Balsa model of an F6F Hellcat.">
+      <img src="image2.jpg" alt="Image 2">
+      <img src="image3.jpg" alt="Image 3">
+    </div>
+  </div>
+
+  <div class="blog-section">
+    <div class="image-title">
+      <img src="blog_header.png" alt="Latest Posts" height="24">
+    </div>
+
+    
+    <div class="blog-post">
+      <h3>Design Talk: Fuselages</h3>
+      <p>Published on June 10, 2023</p>
+      <p>A discussion on making sure aircraft don't crumple like tin cans.</p>
+    </div>
+    
+    <div class="blog-post">
+      <h3>(Un)remarkable Aircraft: The Ca.309</h3>
+      <p>Published on May 25, 2023</p>
+      <p>The life and times of the Ghibli, one of the forgotten planes of WWII.</p>
+    </div>
+  </div>
+  
+</body>
 </html>
