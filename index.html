@@ -3,6 +3,8 @@
 <head>
   <meta name="viewport" content="width=device-width" />
   <title>Pixel's Site</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -41,22 +43,6 @@
       margin-bottom: 10px;
     }
 
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      margin-top: 0px;
-    }
-
-    .social-icons a {
-      display: inline-block;
-      margin: 0 10px;
-    }
-
-    .social-icons img {
-      width: 15px;
-      height: 15px;
-    }
-    
     .image-title {
       padding-bottom: 20px;
       background-color: transparent;
@@ -126,23 +112,13 @@
   </header>
   
   <div>
-    <p>Welcome to my site!</p>
+    <p>Thank you for visiting!</p>
   </div>
-
-  <div class="social-icons">
-    <a href="https://www.instagram.com/pixels.pixelart/" target="_blank" rel="noopener noreferrer">
-      <img src="https://pluspng.com/img-png/instagram-icon-png-instagram-icon-1600.png" alt="Instagram">
-    </a>
-    <a href="https://discord.gg/zZeVt73qhY" target="_blank" rel="noopener noreferrer">
-      <img src="https://bestsecuritysearch.com/wp-content/uploads/2016/10/discord-logo-bss.png" alt="Discord">
-    </a>
-  </div>
-
   
   <div class="contact-info">
-    <p>Click the icons to see more pixelart, or join my Discord server. </p>
+    <a href="https://instagram.com/pixels.pixelart/" target="_blank" rel="noopener noreferrer" style="color: #8d697a;">See more pixelart</a>
     <p> </p>
-    <p> </p>
+    <a href="mailto:aryantakalkar8@gmail.com" style="color: #8d697a;">Send me an Email</a>
     <p> </p>
     <p>Blog: https://pixelazer.medium.com/</p>
   </div>
@@ -153,9 +129,16 @@
     </div>
     
     <div class="image-wrapper">
-      <img src="image1.jpg" alt="An incomplete Balsa model of an F6F Hellcat.">
-      <img src="image2.jpg" alt="Image 2">
-      <img src="image3.jpg" alt="Image 3">
+      <a href="image1.jpg" data-lightbox="image-set" data-title="A balsa F6F Hellcat, under construction.">
+        <img src="image1.jpg" alt="A balsa F6F Hellcat, under constuction">
+      </a>
+
+      <a href="image2.jpg" data-lightbox="image-set" data-title="The same model, in a less advanced stage.">
+        <img src="image2.jpg" alt="The same model, in a less advanced stage.">
+      </a>
+      <a href="image3.jpg" data-lightbox="image-set" data-title="A small model found in a hotel in Himachal Pradesh.">
+        <img src="image3.jpg" alt="A small model found in a hotel in Himachal Pradesh.">
+      </a>
     </div>
   </div>
 
@@ -177,6 +160,9 @@
       <p>The life and times of the Ghibli, one of the forgotten planes of WWII.</p>
     </div>
   </div>
-  
+
+  <p style="font-size: 8px; line-height: 8px;">All images and text in this website are &copy Aryan Takalkar.</p>
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script> 
 </body>
 </html>
