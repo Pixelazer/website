@@ -1,81 +1,168 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Budday Amol</title>
+  <meta name="viewport" content="width=device-width" />
+  <title>Pixel's Site</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+
   <style>
-    /* Basic CSS for styling */
     body {
-      background-image:url('https://cdn.discordapp.com/attachments/806386822992625665/1207945566953279538/almo0.jpg?ex=65e17df9&is=65cf08f9&hm=2d4a1340981260258199eb09ab5e83f409587f86a205e0af27c80f945c2c7406&');
-      
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f0f0f0;
+      text-align: center;
+      background-color: #ffecd6;
     }
-
-    .container {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 0 20px;
-    }
-
+    
     h1 {
-      text-align: center;
+      color: #0d2b45;
+      font-size: 28px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      margin-top: 30px;
     }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
+    
+    p {
+      color: #8d697a;
+      font-size: 18px;
     }
-
-    .gif-container {
-      text-align: center;
+    
+    header {
+      padding: 0;
     }
-
-    .gif-container img {
+    
+    header img {
+      display: block;
+      margin: 0 auto;
       max-width: 100%;
       height: auto;
-      display: block;
+    }
+    
+    .contact-info {
+      margin-top: 10px;
+    }
+    
+    .contact-info p {
+      margin-bottom: 10px;
     }
 
-    .gif-container img {
-      display: inline-block;
+    .image-title {
+      padding-bottom: 20px;
+      background-color: transparent;
     }
 
-    .gallery img {
-      max-width: 100%;
-      height: auto;
-      display: block;
+    .image-title img {
+      filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+    }
+
+    .blog-section {
+      background-color: #ffd4a3;
+      padding: 30px;
+      margin-top: 50px;
+    }
+    
+    .blog-section h2 {
+      color: #203c56;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    
+    .blog-section .blog-post {
+      text-align: left;
+      margin-bottom: 30px;
+    }
+    
+    .blog-section .blog-post h3 {
+      color: #544e63;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    .blog-section .blog-post p {
+      color: #d08159;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+    
+    .gallery-section {
+      background-color: #ffd4a3;
+      padding: 30px;
+      margin-top: 50px;
+    }
+    
+    .gallery-section h2 {
+      color: #203c56;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    
+    .gallery-section .image-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    
+    .gallery-section .image-wrapper img {
+      max-width: 300px;
+      max-height: 200px;
+      margin: 0 10px;
     }
   </style>
 </head>
 <body>
+  <header>
+    <img src="header.png" alt="Header Image">
+  </header>
   
+  <div>
+    <p>Thank you for visiting!</p>
+  </div>
+  
+  <div class="contact-info">
+    <a href="https://pixelazer.tumblr.com/" target="_blank" rel="noopener noreferrer" style="color: #8d697a;">See more pixelart</a>
+    <p> </p>
+    <!-- <a href="mailto:aryantakalkar8@gmail.com" style="color: #8d697a;">Send me an Email</a> -->
+    <p> </p>
+    <p>Blog: https://pixelazer.medium.com/</p>
+  </div>
 
-  <div class="container">
-    <div class="gif-container">
-      <img src="tittle.gif">
+  <div class="gallery-section">
+    <div class="image-title">
+      <img src="gallery_header.png" alt="Title Image" height="24">
     </div>
     
-    <p></p>
-    <h1 style="color:Red;">gallery of amol funny moments</h1>
-    <p></p>
+    <div class="image-wrapper">
+      <a href="image1.jpg" data-lightbox="image-set" data-title="A balsa F6F Hellcat, under construction.">
+        <img src="image1.jpg" alt="A balsa F6F Hellcat, under constuction">
+      </a>
 
-    <div class="gallery">
-      <img src="amol1.jpg">
-      <img src="amol2.jpg">
-      <img src="amol3.jpg"">
-      <img src="amol4.jpg">
-      <img src="amol5.jpg">
-      <img src="amol6.jpg">
-      <img src="amol7.jpg">
-      <img src="amol8.png">
-      <img src="amol9.jpg">
+      <a href="image2.jpg" data-lightbox="image-set" data-title="The same model, in a less advanced stage.">
+        <img src="image2.jpg" alt="The same model, in a less advanced stage.">
+      </a>
+      <a href="image3.jpg" data-lightbox="image-set" data-title="A small model found in a hotel in Himachal Pradesh.">
+        <img src="image3.jpg" alt="A small model found in a hotel in Himachal Pradesh.">
+      </a>
     </div>
   </div>
 
+  <div class="blog-section">
+    <div class="image-title">
+      <img src="blog_header.png" alt="Latest Posts" height="24">
+    </div>
+
+    
+    <div class="blog-post">
+      <h3>Design Talk: Fuselages</h3>
+      <p>Published on June 10, 2023</p>
+      <p>A discussion on making sure aircraft don't crumple like tin cans.</p>
+    </div>
+    
+    <div class="blog-post">
+      <h3>(Un)remarkable Aircraft: The Ca.309</h3>
+      <p>Published on May 25, 2023</p>
+      <p>The life and times of the Ghibli, one of the forgotten planes of WWII.</p>
+    </div>
+  </div>
+
+  <p style="font-size: 8px; line-height: 8px;">All images and text in this website are &copy Aryan Takalkar.</p>
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script> 
 </body>
 </html>
